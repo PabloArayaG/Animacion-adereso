@@ -6,7 +6,43 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+#toggle-background {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    background-color: #1864FF; 
+    color: #ffffff;
+    border: none;
+    border-radius: 50px; 
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 3px 6px rgba(26, 115, 232, 0.15);
+    transition: background-color 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;
+    z-index: 10;
+}
+
+#toggle-background:hover {
+    background-color: #0e4bc5; 
+    box-shadow: 0px 4px 8px rgba(26, 115, 232, 0.25); 
+}
+
+#toggle-background:active {
+    transform: translateY(1px);
+    box-shadow: 0px 2px 4px rgba(26, 115, 232, 0.2);
+}
+
+body.dark-mode {
     background-color: rgb(14, 13, 82);
+    transition: background-color 0.5s ease;
+}
+
+body.light-mode {
+    background-color: white;
+    transition: background-color 0.5s ease;
 }
 
 .animacion {
